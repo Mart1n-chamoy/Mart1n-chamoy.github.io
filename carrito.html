@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo carniceria</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Prototipo carniceria</h1>
+        
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="menu">
+                <a href="#">Productos</a>
+                <div class="menu-content">
+                    <a href="cortes_vacunos.html">Cortes vacunos</a><br>
+                    <a href="cortes_cerdo.html">Cortes de cerdo</a><br>
+                    <a href="embutidos.html">Embutidos</a><br>
+                    <a href="fiambres.html">Fiambres</a><br>
+                </div>
+            </li>
+            <li><a href="carrito.html">Carrito</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="carrito-lista">
+                <!-- Los elementos del carrito se agregarán aquí dinámicamente con JavaScript -->
+            </ul>
+            <p>Total: <span id="total-precio">$0.00</span></p>
+            <button onclick="realizarCompra()">Realizar Compra
+            </button>
+        </section>
+
+        <section class="productos">
+            <article>
+                <img src="imagenes/producto1.jpg" alt="Producto 1">
+                <h2>Costillar</h2><br>
+                <p>Costilla de novillito de primera.</p><br>
+                <p>Precio por kg: $19.99</p><br>
+                <button>Agregar al carrito</button>
+            </article>
+
+            <article>
+                <img src="imagenes/producto6.jpg">
+                <h2>Queso</h2><br>
+                <p>Queso en fetas.</p><br>
+                <p>Precio por kg: $19.99</p><br>
+                <button>Agregar al carrito</button>
+            </article>
+
+            <article>
+                <img src="imagenes/producto4.jpg" alt="Producto 2">
+                <h2>Morcilla bombón</h2><br>
+                <p>Morcillas especiales.</p><br>
+                <p>Precio por kg: $29.99</p><br>
+                <button>Agregar al carrito</button>
+            </article>
+
+            <article>
+                <img src="imagenes/producto5.jpg" alt="Producto 2">
+                <h2>Jamón cocido</h2><br>
+                <p>Jamón cocido en fetas.</p><br>
+                <p>Precio por kg: $29.99</p><br>
+                <button>Agregar al carrito</button>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        
+        <p>&copy; 2023 Tienda en línea. Todos los derechos reservados.</p>
+    </footer>
+
+    
+    <script src="app.js"></script>
+
+</body>
+</html>
